@@ -1,0 +1,47 @@
+.btn-group{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.btn-primary1{
+    margin:5px;
+}
+
+.card {position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logintab {
+    width: 100vw; 
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logintab form{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  }
+  
+  .registertab{
+    width: 100vw; 
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .registertab form{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  }
+  
