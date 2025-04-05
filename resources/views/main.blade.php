@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <title>Hotel DeluxeDeluxeDeluxe  | Home</title>
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- Custom Theme files -->
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <!-- Custom Theme files -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--webfont-->
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
-    <script src="js/jquery.easydropdown.js"></script>
-    <!--Animation-->
-    <script src="js/wow.min.js"></script>
-    <link href="css/animate.css" rel='stylesheet' type='text/css' />
-    <script>
-      new WOW().init();
-    </script>
+<title>Hotel DeluxeDeluxeDeluxe  | Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--webfont-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
 </head>
 <body>
 <div class="header">
@@ -63,11 +59,9 @@
 	    		    <div class="clearfix"></div>
 	    	    </div>
 	            <div class="col-sm-4 header_right">
-                @guest
 	    		      <div id="loginContainer"><a href="#" id="loginButton"><img src="images/login.png"><span>Login</span></a>
-                
 						    <div id="loginBox">                
-						        <form id="loginForm" action="{{ route('login') }}" method="POST" class="login">
+						        <form id="loginForm">
 						                <fieldset id="body">
 						                	<fieldset>
 						                          <label for="email">Email Address</label>
@@ -77,19 +71,13 @@
 						                            <label for="password">Password</label>
 						                            <input type="password" name="password" id="password">
 						                     </fieldset>
-						                    <input type="submit" id="login" value="Войти">
+						                    <input type="submit" id="login" value="Sign in">
 						                	<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
 						            	</fieldset>
 						                 <span><a href="#">Forgot your password?</a></span>
 							      </form>
 				              </div>
 			             </div>
-                   @endguest
-                   @auth    
-						       <div id="loginContainer"><a href="#" id="123"><img src="images/login.png"><span>{{ auth()->user()->name }}</span></a>
-			             </div>
-                   <a href="{{ route('logout') }}">Выйти</a>
-						       @endauth
 		                 <div class="clearfix"></div>
 	                 </div>
 	                <div class="clearfix"></div>
@@ -133,7 +121,6 @@
    		    <div class="clearfix"></div>
          </div>
    </div>
-   @auth
    <div class="content_top">
    	  <div class="container">
    		<div class="col-md-4 bottom_nav">
@@ -183,6 +170,7 @@
 		</div>
    	</div>
    </div>
+   @auth
    <div class="content_middle">
    	  <div class="container">
    	    <div class="content_middle_box">
@@ -537,12 +525,57 @@
    	  </div>
    </div>
    @endauth
-   @guest 
-  <div class="nonauth">
-    <img src="\img\nonauth.png" alt="img">
-  </div>
+   @guest
    @endguest
+   <div class="footer">
+   	<div class="container">
+   	 <div class="footer_top">
+   	   <h3>Subscribe to our newsletter</h3>
+   	   <form>
+		<span>
+			<i><img src="images/mail.png" alt=""></i>
+		    <input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+		    <label class="btn1 btn2 btn-2 btn-2g"> <input name="submit" type="submit" id="submit" value="Subscribe"> </label>
+		    <div class="clearfix"> </div>
+		</span>			 	    
+	   </form>
+	  </div>
+	  <div class="footer_grids">
+	     <div class="footer-grid">
+			<h4>Ipsum Quis</h4>
+			<ul class="list1">
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Mirum est</a></li>
+				<li><a href="#">Placerat facer</a></li>
+				<li><a href="#">Claritatem</a></li>
+				<li><a href="#">Sollemnes </a></li>
+			</ul>
+		  </div>
+		  <div class="footer-grid">
+			<h4>Quis Ipsum</h4>
+			<ul class="list1">
+				<li><a href="#">Placerat facer</a></li>
+				<li><a href="#">Claritatem</a></li>
+				<li><a href="#">Sollemnes </a></li>
+				<li><a href="#">Claritas</a></li>
+				<li><a href="#">Mirum est</a></li>
+			</ul>
+		  </div>
+		  <div class="footer-grid last_grid">
+			<h4>Follow Us</h4>
+			<ul class="footer_social wow fadeInLeft" data-wow-delay="0.4s">
+			  <li><a href=""> <i class="fb"> </i> </a></li>
+			  <li><a href=""><i class="tw"> </i> </a></li>
+			  <li><a href=""><i class="google"> </i> </a></li>
+			  <li><a href=""><i class="u_tube"> </i> </a></li>
+		 	</ul>
+		 	<div class="copy wow fadeInRight" data-wow-delay="0.4s">
+              <p> &copy; 2016 Hotel DeluxeDeluxe. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+	        </div>
+		  </div>
+		  <div class="clearfix"> </div>
+	   </div>
+      </div>
+   </div>
 </body>
 </html>		
-</body>
-</html>

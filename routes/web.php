@@ -49,3 +49,7 @@ Route::get('articles', [
 Route::get('articles/{article}', [
     ArticleController::class, 'update'
 ]);
+
+Route::get('main', function () {
+    return view('main');
+})->name('main');
