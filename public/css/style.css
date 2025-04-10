@@ -366,9 +366,12 @@ a#loginButton img {
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
-	min-height:410px;
+	min-height:100px;
 	text-align:center;
 	padding-top:3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .container_wrap{
 	margin:0 auto;
@@ -2165,6 +2168,9 @@ p.educate {
 .menu li a {
 	margin: 5px 5px;
 	font-size: 0.8125em;
+	display: flex;
+	align-items: center;
+	justify-content: center	;
 }
 .content_dropdown {
 	margin-left: 0px;
@@ -3270,4 +3276,5 @@ ul.vision {
 .nonauth{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }

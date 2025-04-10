@@ -3,15 +3,22 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HousesController;
+use App\Http\Controllers\RoomsController;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
 
-Route::get('test', function () {
-    return view('test');
-})->name('test');
+Route::get('test', [HousesController::class,'index'])->name('test');
+
+Route::get('rooms', [RoomsController::class, 'index'])->name('rooms');
+
+Route::get('adminlogin', function () {
+    return view('adminlogin');
+})->name('adminlogin');
 
 Route::get('login', [
     LoginController::class, 'loginForm'
@@ -53,3 +60,13 @@ Route::get('articles/{article}', [
 Route::get('main', function () {
     return view('main');
 })->name('main');
+
+
+
+Route::get('news', function () {
+    return view('news');
+})->name('news');
+
+Route::get('home', function () {
+    return view('home');
+})->name('home');
