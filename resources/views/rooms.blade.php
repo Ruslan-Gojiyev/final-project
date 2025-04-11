@@ -24,7 +24,9 @@
                     <div class="col-md-4 wow fadeInLeft" data-wow-delay="{{ $key * 0.4 }}s">
                         <div class="living_box">
                             <div>
+                            <a href="{{$room->link}}" target="_blank">
                                 <img src="{{ $room->img }}" class="img-responsive" alt="" style="width: 100%; height: 200px;" />
+                            </a>
                                 <span class="sale-box">
                                     <span class="sale-label">Номер</span>
                                 </span>
@@ -35,13 +37,6 @@
                                 <p class="price">${{ $room->price }}</p>
                             </div>
                             <table class="propertyDetails">
-                                <tbody>
-                                <tr>
-                                    <td><img src="public/images/area.png" alt="" style="margin-right:7px;">2,412m</td>
-                                    <td><img src="public/images/bed.png" alt="" style="margin-right:7px;">6 Beds</td>
-                                    <td><img src="public/images/drop.png" alt="" style="margin-right:7px;">3 Baths</td>
-                                </tr>
-                                </tbody>
                             </table>
                         </div>
                     </div>

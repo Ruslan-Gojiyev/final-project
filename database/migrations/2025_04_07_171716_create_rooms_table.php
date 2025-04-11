@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('title', length: 255);
             $table->string('img', length: 255);
             $table->decimal('price', 8, 2);
+            $table->string('link')->nullable();
             $table->timestamps();
 
         });

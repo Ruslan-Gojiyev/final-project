@@ -12,6 +12,18 @@ Route::get('/', [HousesController::class,'index'])->name('home');
 
 Route::get('rooms', [RoomsController::class, 'index'])->name('rooms');
 
+Route::get('singlefirst', function () {
+    return view('singlefirst');
+})->name('singlefirst');
+
+Route::get('singlesecond', function () {
+    return view('singlesecond');
+})->name('singlesecond');
+
+Route::get('singlethird', function () {
+    return view('singlethird');
+})->name('singlethird');
+
 Route::get('adminlogin', function () {
     return view('adminlogin');
 })->name('adminlogin');

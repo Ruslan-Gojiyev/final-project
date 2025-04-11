@@ -59,8 +59,6 @@
                             </fieldset>
                             <fieldset style="display: flex; align-items: center">
                                 <input type="submit" id="login" value="Войти">
-                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Запомнить
-                                        меня</i></label>
                             </fieldset>
                             <fieldset>
                                 <a href="{{ route('register') }}">Регистрация</a>

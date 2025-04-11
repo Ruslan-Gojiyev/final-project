@@ -14,7 +14,7 @@
     @auth
         <div class="banner">
             <div class="container_wrap">
-                <h1>Как вам эти варианты?</h1>
+                <h1>Это все МЫ</h1>
                 <div class="clearfix"></div>
             </div>
         </div>
