@@ -68,28 +68,28 @@
                 <div class="col-md-8 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="educate_grid">
                         <div class="col-md-6 room-grid">
-                            <div class="living_box"><a href="single.html">
+                            <div class="living_box"><div>
                                     <img src="public/images/e4.jpg" class="img-responsive" alt=""/>
                                     <span class="sale-box">
                       <span class="sale-label">Холл</span>
                     </span>
-                                </a>
+                        </div>
                                 <div class="living_desc desc1">
-                                    <h3><a href="#">Мраморные врата</a></h3>
+                                    <h3>Мраморные врата</h3>
                                     <p>Оформление холла нашего отеля в раскошном классическом стиле</p>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 room-grid">
-                            <div class="living_box"><a href="single.html">
+                            <div class="living_box"><div>
                                     <img src="public/images/e3.jpg" class="img-responsive" alt=""/>
                                     <span class="sale-box">
                       <span class="sale-label">Номеры</span>
                     </span>
-                                </a>
+                        </div>
                                 <div class="living_desc desc1">
-                                    <h3><a href="#">VIP номера</a></h3>
+                                    <h3>VIP номера</h3>
                                     <p>Новые номера класса VIP скоро будут доступны</p>
                                     <p class="price pr_box"> стоимость от $1150</p>
                                     <div class="clearfix"></div>
@@ -100,14 +100,14 @@
                     </div>
                     <div class="educate_grid1">
                         <div class="col-md-6 room-grid">
-                            <div class="living_box"><a href="single.html">
+                            <div class="living_box"><div>
                                     <img src="public/images/e1.jpg" class="img-responsive" alt=""/>
                                     <span class="sale-box">
                       <span class="sale-label">Балкон</span>
                     </span>
-                                </a>
+                            </div>
                                 <div class="living_desc desc1">
-                                    <h3><a href="#">Панорама</a></h3>
+                                    <h3>Панорама</h3>
                                     <p>Взгляните на наш с прекрасного ракурса</p>
                                     <p class="educate"><img src="public/images/star1.png" alt=""/></p>
                                     <p class="price pr_box"> вход $150</p>
@@ -116,14 +116,14 @@
                             </div>
                         </div>
                         <div class="col-md-6 room-grid">
-                            <div class="living_box"><a href="single.html">
+                            <div class="living_box"><div >
                                     <img src="public/images/e2.jpg" class="img-responsive" alt=""/>
                                     <span class="sale-box">
                       <span class="sale-label">Бассейн</span>
                     </span>
-                                </a>
+                        </div>
                                 <div class="living_desc desc1">
-                                    <h3><a href="#">Вода</a></h3>
+                                    <h3>Вода</h3>
                                     <p>Наш бассейн оставит у вас МОРЕ эмоций</p>
                                     <p class="educate"><img src="public/images/star1.png" alt=""/></p>
                                     <p class="price pr_box">вход от $150(безлимит $250)</p>
