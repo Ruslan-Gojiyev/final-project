@@ -18,7 +18,7 @@ class LoginController extends Controller
             'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['required', 'string',  'max:255'],
         ]);
-        
+
         $success = Auth::attempt($request->only('email', 'password'));
 
         if (!$success) {
@@ -27,7 +27,7 @@ class LoginController extends Controller
             ]);
         }
 
-        return redirect('test');
+        return redirect()->route('home');
     }
 
     public function registerForm() {
@@ -48,13 +48,13 @@ class LoginController extends Controller
         ]);
 
         Auth::login($user);
-        
-        return redirect('test');
+
+        return redirect()->route('home');
     }
 
     public function logout() {
         Auth::logout();
 
-        return redirect('test');
+        return redirect()->route('home');
     }
 }

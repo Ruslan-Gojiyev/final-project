@@ -16,17 +16,12 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @var array<class-string, class-string>
      */
-    protected $policies = [
-        Article::class => ArticlePolicy::class
-    ];
+    protected $policies = [];
 
     /**
      * Register any authentication / authorization services.
      */
     public function boot(): void
     {
-        Gate::define('test-gate', function ($user) {
-            return $user->name == 'test';
-        });
     }
 }

@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="/public/images/style.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-<div class="alert alert-danger" role="alert">
-    @if($errors->any())
-        @foreach($errors->all() as $error)
-            <p style="color: red;">{{ $error }}</p>
-        @endforeach
-    @endif
-</div>
+@extends('layouts.app')
 
-<div class="registertab">
+@section('title', 'Регистрация')
+
+@section('content')
+
+<div class="registertab mt-5">
     <form action="{{ route('register') }}" method="POST">
         @csrf
         <label>
@@ -46,5 +34,5 @@
         <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
     </form>
 </div>
-</body>
-</html>
+
+@endsection
