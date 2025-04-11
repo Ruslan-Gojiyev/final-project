@@ -15,9 +15,9 @@
   }
 
   .logintab {
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,11 +28,9 @@
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
   }
-  
+
   .registertab{
-    width: 100vw; 
-    height: 100vh;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +42,3 @@
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
   }
-  
